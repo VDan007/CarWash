@@ -12,6 +12,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 2rem;
     background: #151515;
 }
 
@@ -88,6 +89,11 @@ section ul{
 .service__container{
     min-width: 250px;
     margin: 2em 0;
+}
+
+.section__adress{
+    flex-direction: column;
+    justify-content:space-between;
 }
 
 
