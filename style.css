@@ -88,6 +88,7 @@ header ul{
     background-color: rgba(21,21,21,1);
     padding: 1rem;
     transition: all 1s;
+    border-radius: 10px;
 }
 
 .nav__open ul{
@@ -95,6 +96,10 @@ header ul{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+
+.nav__open a{
+    text-decoration: none;
 }
 
 .show{
@@ -108,6 +113,7 @@ main{
 
 main h1 {
     margin: 3rem 0;
+    scroll-margin-top: 50px;
 }
 
 .svg{
@@ -138,7 +144,8 @@ section ul{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 1rem;
     min-width: 250px;
     min-height: 180px;
     max-height: 200px;
