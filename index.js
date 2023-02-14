@@ -23,19 +23,26 @@ function toggleNav(e){
 
 
 function scroll(e){
-    e.preventDefault();
-    console.log("clicked");
-    target = e.target.innerText;
     
+    target = e.target.innerText;
+
+    if (target == "Tétény Autóház"){
+        toggleNav(); 
+    }
+    
+    else{
+        e.preventDefault();
+        let element = document.getElementById(target);
+            
+            element.scrollIntoView({
+              block: 'start',
+              behavior: 'smooth',
+              
+            });
+           
+        toggleNav();    
+
+    }
     
 
-    let element = document.getElementById(target);
-        
-        element.scrollIntoView({
-          block: 'start',
-          behavior: 'smooth',
-          
-        });
-       // window.scrollBy(0, -10);
-    toggleNav();    
 }
