@@ -14,6 +14,7 @@ function toggleNav(e){
     }else{
         nav__open.classList.add("show");
         navBtn.style.display = "none";
+        
     }
    
 }
@@ -25,6 +26,7 @@ function scroll(e){
     e.preventDefault();
     console.log("clicked");
     target = e.target.innerText;
+    
     
 
     let element = document.getElementById(target);

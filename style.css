@@ -81,7 +81,7 @@ header ul{
     right:-250px;
     display: flex;
     flex-direction: column;
-    justify-content:space-around;
+    justify-content:space-between;
     align-items: flex-end;
     max-width: 350px;
     height: 350px;
