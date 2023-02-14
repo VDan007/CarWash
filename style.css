@@ -74,6 +74,8 @@ header ul{
 
 .navCloseBtn{
     cursor: pointer;
+    max-width: 30px;
+    max-height: 30px;
 }
 .nav__open{
     position: absolute;
