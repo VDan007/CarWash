@@ -25,6 +25,7 @@ header{
 }
 
 header ul{
+    list-style: none;
     display: flex;
     gap: 1em;
 }
@@ -61,14 +62,23 @@ header ul{
     padding: 1rem;
 }
 
+
+main{
+    text-align: center;
+}
+
+.svg{
+    max-width: 80px;
+    
+}
+
+
 footer{
     border: 1px solid pink;
 }
 
 
-ul{
-    list-style: none;
-}
+
 
 
 
