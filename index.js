@@ -10,8 +10,10 @@ function toggleNav(e){
     
     if(nav__open.classList.contains("show")){
         nav__open.classList.remove("show");
+        navBtn.style.display = "block";
     }else{
         nav__open.classList.add("show");
+        navBtn.style.display = "none";
     }
    
 }
