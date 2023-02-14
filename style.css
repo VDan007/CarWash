@@ -68,7 +68,37 @@ header ul{
 }
 
 .svg__nav{
-    max-width: 30px;
+    max-width: 25px;
+    cursor: pointer;
+}
+
+.navCloseBtn{
+    cursor: pointer;
+}
+.nav__open{
+    position: absolute;
+    top: 0;
+    right:-250px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: flex-end;
+    max-width: 350px;
+    height: 200px;
+    background-color: rgba(21,21,21,1);
+    padding: 1rem;
+    transition: all 1s;
+}
+
+.nav__open ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.show{
+    right: 0px;
 }
 
 
@@ -111,6 +141,7 @@ section ul{
     justify-content: center;
     min-width: 250px;
     min-height: 180px;
+    max-height: 200px;
     margin: 2em 0;
     
 }
@@ -122,6 +153,11 @@ section ul{
 
 .mapouter{
     margin-top: 1rem;
+}
+
+#gmap_canvas{
+    border-radius: 10px;
+    border: 2px solid #B5EB4A;
 }
 
 footer{
