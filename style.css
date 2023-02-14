@@ -61,7 +61,10 @@ header ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 0.5rem 1.5rem;
+    background-color: rgba(21,21,21,0.5);
+    
+
 }
 
 .svg__nav{
