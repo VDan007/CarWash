@@ -68,8 +68,26 @@ main{
 }
 
 .svg{
+    padding: 0;
     max-width: 80px;
+    margin-bottom: 1em;
     
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section ul{
+    list-style: none;
+    
+}
+
+.service__container{
+    min-width: 250px;
+    margin: 2em 0;
 }
 
 
