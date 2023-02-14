@@ -76,6 +76,10 @@ main{
     text-align: center;
 }
 
+main h1 {
+    margin: 3rem 0;
+}
+
 .svg{
     padding: 0;
     max-width: 80px;
@@ -94,9 +98,21 @@ section ul{
     
 }
 
+.services__section{
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+}
+
 .service__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     min-width: 250px;
+    min-height: 180px;
     margin: 2em 0;
+    
 }
 
 .section__adress{
@@ -104,9 +120,13 @@ section ul{
     justify-content:space-between;
 }
 
+.mapouter{
+    margin-top: 1rem;
+}
 
 footer{
-    border: 1px solid pink;
+    text-align: center;
+    font-size: 0.7rem;
 }
 
 
