@@ -81,11 +81,10 @@ header ul{
     right:-250px;
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
+    justify-content:space-around;
     align-items: flex-end;
-    gap: 2rem;
     max-width: 350px;
-    height: 250px;
+    height: 350px;
     background-color: rgba(21,21,21,1);
     padding: 2rem;
     transition: all 1s;
@@ -97,13 +96,14 @@ header ul{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    gap:2rem;
 }
 
 .nav__open a{
     text-decoration: none;
 }
 
-
+.nav__open ul li:hover,
 .svg__nav:hover,
 .navCloseBtn:hover{
     transform: scale(1.3);
