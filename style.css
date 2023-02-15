@@ -163,6 +163,37 @@ section ul{
     
 }
 
+.pricelist__section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.package__container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 50%;
+    border: 1px solid #B5EB4A;
+    border-radius: 15px;
+    padding: 0.5rem;
+}
+
+.lookAtIt{
+    
+    background-color: #B5EB4A;
+    padding: 0.7rem;
+    border-radius: 15px;
+    
+}
+
+.lookAtIt h3 ,.lookAtIt p {
+    color: #151515;
+}
+
 .section__adress{
     flex-direction: column;
     justify-content:space-between;
