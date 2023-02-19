@@ -10,7 +10,7 @@ navLinks.forEach(link => link.addEventListener("click",scroll) );
 
 function toggleNav(e){
 
-    const smallScreen = window.innerWidth < 950 ? true : false;
+    
     
 
 
@@ -45,8 +45,10 @@ function scroll(e){
               behavior: 'smooth',
               
             });
-           
-        toggleNav();    
+        if(window.innerWidth < 950 ){
+            toggleNav();    
+        }   
+
 
     }
     
