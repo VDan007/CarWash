@@ -8,7 +8,7 @@ navLinks.forEach(link => link.addEventListener("click",scroll) );
 
 
 
-function toggleNav(e){
+function toggleNav(){
 
     
     
@@ -16,24 +16,32 @@ function toggleNav(e){
 
     if(nav__open.classList.contains("show")){
         nav__open.classList.remove("show");
-        // navBtn.style.display = "block";
+        nav__open.removeEventListener("mouseleave",closewWithMouseAway);
+        
     }else {
         nav__open.classList.add("show");
-        // navBtn.style.display = "none";
+        nav__open.addEventListener("mouseleave",closewWithMouseAway);
+        
         
     }
    
 }
 
 
-
+function closewWithMouseAway(e){
+   
+        toggleNav();
+    
+}
 
 function scroll(e){
     
     target = e.target.innerText;
 
     if (target == "Tétény Autóház"){
-        toggleNav(); 
+        if(window.innerWidth < 950 ){
+            toggleNav();    
+        } 
     }
     
     else{
@@ -43,8 +51,8 @@ function scroll(e){
             element.scrollIntoView({
               block: 'start',
               behavior: 'smooth',
-              
-            });
+              });
+
         if(window.innerWidth < 950 ){
             toggleNav();    
         }   
