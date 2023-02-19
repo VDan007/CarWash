@@ -7,11 +7,15 @@ const navLinks = document.querySelectorAll(".navLink");
 navLinks.forEach(link => link.addEventListener("click",scroll) );
 
 function toggleNav(e){
+
+    const smallScreen = window.innerWidth < 950 ? true : false;
     
-    if(nav__open.classList.contains("show")){
+
+
+    if(smallScreen && nav__open.classList.contains("show")){
         nav__open.classList.remove("show");
         navBtn.style.display = "block";
-    }else{
+    }else if(smallScreen){
         nav__open.classList.add("show");
         navBtn.style.display = "none";
         
@@ -19,7 +23,7 @@ function toggleNav(e){
    
 }
 
-
+console.log(window.innerWidth);
 
 
 function scroll(e){

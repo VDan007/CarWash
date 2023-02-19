@@ -218,7 +218,28 @@ footer{
 }
 
 
+@media (min-width: 950px){
+    .svg__nav{
+        display: none;
+    }
 
+   
+    .nav__open{
+        position: static;
+        background: rgba(1,1,1,0.0);
+        width: auto;
+        height: auto;
+        transition: none ;
+        
+    }
+
+    .nav__open ul{
+        flex-direction: row;
+    }
+    .navCloseBtn{
+        display: none;
+    }
+}
 
 
 
