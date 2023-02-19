@@ -6,24 +6,26 @@ navCloseBtn.addEventListener("click",toggleNav);
 const navLinks = document.querySelectorAll(".navLink");
 navLinks.forEach(link => link.addEventListener("click",scroll) );
 
+
+
 function toggleNav(e){
 
     const smallScreen = window.innerWidth < 950 ? true : false;
     
 
 
-    if(smallScreen && nav__open.classList.contains("show")){
+    if(nav__open.classList.contains("show")){
         nav__open.classList.remove("show");
-        navBtn.style.display = "block";
-    }else if(smallScreen){
+        // navBtn.style.display = "block";
+    }else {
         nav__open.classList.add("show");
-        navBtn.style.display = "none";
+        // navBtn.style.display = "none";
         
     }
    
 }
 
-console.log(window.innerWidth);
+
 
 
 function scroll(e){

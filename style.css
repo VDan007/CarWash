@@ -63,6 +63,7 @@ header ul{
     align-items: center;
     padding: 0.5rem 1.5rem;
     background-color: rgba(21,21,21,0.5);
+    max-height: 7vh;
     
 
 }
@@ -70,6 +71,7 @@ header ul{
 .svg__nav{
     max-width: 25px;
     cursor: pointer;
+    z-index: 1;
 }
 
 .navCloseBtn{
@@ -83,14 +85,16 @@ header ul{
     right:-250px;
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
+    justify-content:flex-start;
     align-items: flex-end;
+    gap: 2.5rem;
     max-width: 350px;
-    height: 350px;
+    height: 100vh;
     background-color: rgba(21,21,21,1);
     padding: 2rem;
     transition: all 1s;
     border-radius: 10px;
+    z-index: 50;
 }
 
 .nav__open ul{
@@ -142,6 +146,11 @@ section{
 section ul{
     list-style: none;
     
+}
+
+section p,
+section ul li {
+    line-height: 1.4rem;
 }
 
 .services__section{
@@ -219,10 +228,10 @@ footer{
 
 
 @media (min-width: 950px){
+    
     .svg__nav{
         display: none;
     }
-
    
     .nav__open{
         position: static;
@@ -239,6 +248,10 @@ footer{
     .navCloseBtn{
         display: none;
     }
+    main h1 {
+    scroll-margin-top: 80px;
+}
+    
 }
 
 
